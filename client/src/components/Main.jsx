@@ -35,7 +35,7 @@ const Main = (props) => {
                             <p>${product.price}</p>
                             <p>{product.description}</p>
                             <p>Product Created: {Date(product.createdAt)}</p>
-                            <p><button>Edit</button> | <button>Delete</button></p>
+                            <p><Link to={"/products/edit/" +product._id}>Edit</Link> | <button>Delete</button></p>
 
                         </div>
                     )

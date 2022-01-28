@@ -33,7 +33,7 @@ const New = (props) => {
     }
 
     return <div>
-        <h3>Form</h3>
+        <h3>Create New Product</h3>
         {JSON.stringify(title)}
         <form onSubmit={createProduct}>
             Title:

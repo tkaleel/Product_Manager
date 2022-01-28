@@ -3,6 +3,7 @@ import { Link, Switch, Route, Redirect } from "react-router-dom";
 import Main from './components/Main';
 import New from './components/New';
 import ShowOne from './components/ShowOne';
+import Edit from './components/Edit';
 
 function App() {
   return (
@@ -14,14 +15,18 @@ function App() {
 
       <Switch>
         {/* CREATE */}
-      <Route exact path="/products/new">
+        <Route exact path="/products/new">
           <New />
+        </Route>
+        {/* EDIT */}
+        <Route exact path="/products/edit/:id">
+          <Edit />
         </Route>
         {/* SHOW ONE */}
         <Route path="/products/:id">
           <ShowOne />
         </Route>
-        {/* HOME */}
+        {/* HOME / SHOW ALL */}
         <Route path="/products">
           <Main />
         </Route>
