@@ -4,6 +4,7 @@ import Main from './components/Main';
 import New from './components/New';
 import ShowOne from './components/ShowOne';
 import Edit from './components/Edit';
+import Delete from './components/Delete';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         {/* EDIT */}
         <Route exact path="/products/edit/:id">
           <Edit />
+        </Route>
+        <Route exact path="/products/delete/:id">
+          <Delete />
         </Route>
         {/* SHOW ONE */}
         <Route path="/products/:id">
